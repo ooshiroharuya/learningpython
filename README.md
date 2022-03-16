@@ -1,0 +1,2 @@
+# learningpython
+记录一下我重新学习python过程中的一些代码
