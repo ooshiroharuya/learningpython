@@ -22,3 +22,14 @@ def quadratic(a, b, c):
     x2 = (-b + math.sqrt(pow(b, 2) - 4 * a * c)) / (2 * a)
 
     return x1, x2
+
+
+def power(x):
+    return x * x
+
+def great_power(x, n):
+    s = 1
+    while n > 0:
+        n -= 1
+        s *= x
+    return s
