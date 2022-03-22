@@ -146,3 +146,15 @@ def metric(func):
         print('%s executed in %s ms' % (func.__name__, time.time()))
         return func(*args, **kwargs)
     return wrapped_function
+
+def _private_1(name):
+    return "Hello, %s!" % name
+
+def _private_2(name):
+    return "Hi %s!" % name
+
+def greeting(name):
+    if len(name) > 3:
+        return _private_1(name)
+    else:
+        return _private_2(name)
